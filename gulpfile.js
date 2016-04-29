@@ -11,17 +11,25 @@ var nodemon = require("nodemon");
 
 
 gulp.task( "default", [ "browser-sync" ] );
+
+gulp.task( "fonts", function( ){
+	return gulp.src( "./bower_components/bootstrap-sass/assets/fonts/**/*" )
+		.pipe( gulp.dest( "build/fonts" ) );
+} );
+
 gulp.task("build-sass",
+	[ "fonts" ],
 	function buildSASS( ){
 
 		return gulp
 			.src( [
-				"bower_components/bootstrap-sass/assets/stylesheets/**/*.scss",
-				"client/**/*.scss"
+				"client/app.scss"
 			] )
 			.pipe( plumber( ) )
 			.pipe( flatten( ) )
-			.pipe( sass( ) )
+			.pipe( sass( {
+				"includePaths": [ "./bower_components/bootstrap-sass/assets/stylesheets" ],
+			} ) )
 			.pipe( rename( "concise.css" ) )
 			.pipe( gulp.dest( "build" ) );
 	} );
@@ -31,7 +39,11 @@ gulp.task( "browser-sync", [ "nodemon" ], function( callback ){
 	browserSync
 		.init( null, {
 			"proxy": "http://localhost:9000",
-			"files": ["**/*.*"],
+			"files": [
+				"bower_components/**/*.*",
+				"client/*.*",
+				"index.html"
+			],
 			"port": 8000,
 			"ui": {
 				"port": 8001
@@ -54,7 +66,12 @@ gulp.task( "nodemon", function( callback ){
 			if( !started ){
 				started = true;
 
-				gulp.watch( "**/*.*", [ "build-sass" ] )
+				gulp.watch( [
+						"bower_components/**/*.*",
+						"client/*.*",
+						"index.html"
+					],
+					[ "build-sass" ] )
 					.on( "change", function onChange( ){
 						setTimeout( function onTimeout( ){
 							browserSync.reload( );
