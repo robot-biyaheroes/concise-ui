@@ -28,7 +28,7 @@ gulp.task("build-sass",
 			.pipe( plumber( ) )
 			.pipe( flatten( ) )
 			.pipe( sass( {
-				"includePaths": [ "./bower_components/bootstrap-sass/assets/stylesheets" ],
+				"includePaths": [ "./bower_components/bootstrap-sass/assets/stylesheets", "./bower_components/text-size" ],
 			} ) )
 			.pipe( rename( "concise.css" ) )
 			.pipe( gulp.dest( "build" ) );
