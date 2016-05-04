@@ -16,7 +16,6 @@ gulp.task( "fonts", function( ){
 	return gulp.src( "./bower_components/bootstrap-sass/assets/fonts/**/*" )
 		.pipe( gulp.dest( "build/fonts" ) );
 } );
-
 gulp.task("build-sass",
 	[ "fonts" ],
 	function buildSASS( ){
