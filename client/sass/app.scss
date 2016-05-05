@@ -1,7 +1,7 @@
-@import "_text-size";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@import "client/labels";
-@import "client/divider";
+@import "_text-size";
+@import "_divider";
+@import "_labels";
 
 /* Colours */
 $red:#c0392b;
@@ -248,8 +248,6 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
 }
 
-
-
-
-
-
+.hello {
+	background-color: green;
+}

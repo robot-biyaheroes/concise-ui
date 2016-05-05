@@ -1,14 +1,13 @@
 "use strict";
 
 var gulp = require ("gulp");
-var os = require( "os" );
 var flatten = require ("gulp-flatten");
 var plumber = require ("gulp-plumber");
 var sass = require ("gulp-sass");
 var rename = require ("gulp-rename");
+var concat = require("gulp-concat");
 var browserSync = require("browser-sync");
 var nodemon = require("nodemon");
-
 
 gulp.task( "default", [ "browser-sync" ] );
 
@@ -16,8 +15,9 @@ gulp.task( "fonts", function( ){
 	return gulp.src( "./bower_components/bootstrap-sass/assets/fonts/**/*" )
 		.pipe( gulp.dest( "build/fonts" ) );
 } );
+
+
 gulp.task("build-sass",
-	[ "fonts" ],
 	function buildSASS( ){
 
 		return gulp
@@ -30,6 +30,7 @@ gulp.task("build-sass",
 				"includePaths": [ "./bower_components/bootstrap-sass/assets/stylesheets", "./bower_components/text-size" ],
 			} ) )
 			.pipe( rename( "concise.css" ) )
+			.pipe( concat("concise.css") )
 			.pipe( gulp.dest( "build" ) );
 	} );
 
@@ -49,7 +50,7 @@ gulp.task( "browser-sync", [ "nodemon" ], function( callback ){
 			},
 			"injectChanges": true,
 			"logLevel": "debug",
-			"browser": ( os.type( ) == "Linux" )? "google-chrome" : "google chrome"
+			"open": false,
 		} );
 } );
 
