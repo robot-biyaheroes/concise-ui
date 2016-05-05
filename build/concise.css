@@ -155,6 +155,9 @@ html {
 .text.leaf .text.leaf {
   letter-spacing: 0.007em !important; }
 
+.divider {
+  padding: 10px; }
+
 html {
   font-size: 19.416407865px; }
 
@@ -232,6 +235,9 @@ html {
 
 .text.leaf .text.leaf {
   letter-spacing: 0.007em !important; }
+
+.label {
+  padding: 10px; }
 
 /* Colours */
 /* Generic button defaults */
@@ -467,4 +473,4 @@ nav.v div.btn {
     border-bottom-left-radius: 2px; }
 
 .hello {
-  background-color: black; }
+  background-color: green; }

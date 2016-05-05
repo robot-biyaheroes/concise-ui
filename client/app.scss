@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 @import "_text-size";
-@import "_divider";
-@import "_labels";
+@import "divider";
+@import "labels";
 
 /* Colours */
 $red:#c0392b;
@@ -61,7 +61,7 @@ html {
     box-shadow:none;
     -webkit-transform:translateY($button-depth);
   }
-  
+
 }
 
 /* Placeholders */

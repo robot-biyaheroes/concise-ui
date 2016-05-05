@@ -18,6 +18,7 @@ gulp.task( "fonts", function( ){
 
 
 gulp.task("build-sass",
+	[ "fonts" ],
 	function buildSASS( ){
 
 		return gulp
@@ -25,12 +26,13 @@ gulp.task("build-sass",
 				"client/app.scss"
 			] )
 			.pipe( plumber( ) )
-			.pipe( flatten( ) )
 			.pipe( sass( {
-				"includePaths": [ "./bower_components/bootstrap-sass/assets/stylesheets", "./bower_components/text-size" ],
+				"includePaths": [
+					"./bower_components/bootstrap-sass/assets/stylesheets",
+					"./bower_components/text-size"
+				]
 			} ) )
 			.pipe( rename( "concise.css" ) )
-			.pipe( concat("concise.css") )
 			.pipe( gulp.dest( "build" ) );
 	} );
 
@@ -55,7 +57,9 @@ gulp.task( "browser-sync", [ "nodemon" ], function( callback ){
 } );
 
 
-gulp.task( "nodemon", function( callback ){
+gulp.task( "nodemon",
+	[ "build-sass" ],
+	function( callback ){
 	var started = false;
 
 	return nodemon( {
