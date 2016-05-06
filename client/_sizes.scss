@@ -1,27 +1,4 @@
 /* Sizes */
-.xl{
-  @extend %button;
-  padding:15px 40px;
-  font-size:$default-font-size * 1.4;
-}
-
-.l{
-  @extend %button;
-  padding:15px 30px;
-  font-size:$default-font-size * 1.2;
-}
-.s{
-  @extend %button;
-  padding:8px 20px;
-  font-size:$default-font-size * 0.9;
-}
-.xs{
-  @extend %button;
-  padding:6px 12px;
-  font-size:$default-font-size * 0.8;
-}
-
-
 .huge {
 	padding: 15px 40px;
 	font-size: $default-font-size * 1.4;
