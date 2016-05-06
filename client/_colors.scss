@@ -1,0 +1,76 @@
+@import "mixins";
+
+
+/* Colours */
+$red:#c0392b;
+$green:#27ae60;
+$blue:#3498db;
+$yellow:#f1c40f;
+$pink:#e74c3c;
+$purple:#9b59b6;
+$brown:#e67e22;
+$orange:#d35400;
+$grey:#7f8c8d;
+$black:#2c3e50;
+$flat-grey:#7f8c8d;
+$custom-color:#4F51D2;
+
+/* Generic button defaults */
+$padding:10px 20px;
+$margin:10px;
+$default-font: 'Source Sans Pro', sans-serif;
+$default-font-size: 13px;
+$button-depth:4px;
+$large-button-depth:$button-depth * 1.5;
+$shadow-amount:10;
+$hover-darken:$shadow-amount / 2;
+$default-font-color:#fff;
+
+/* Layout defaults */
+$background:whitesmoke;
+
+
+.red{
+  background-color:$red;
+  @include depth($button-depth,$red);
+}
+.blue{
+  background-color:$blue;
+  @include depth($button-depth,$blue);
+}
+.yellow{
+  background-color:$yellow;
+  @include depth($button-depth,$yellow);
+}
+.pink{
+  background-color:$pink;
+  @include depth($button-depth,$pink);
+}
+.custom-color{
+  background-color:$custom-color;
+  @include depth($button-depth,$custom-color);
+}
+.green{
+  background-color:$green;
+  @include depth($button-depth,$green);
+}
+.purple{
+  background-color:$purple;
+  @include depth($button-depth,$purple);
+}
+.brown{
+  background-color:$brown;
+  @include depth($button-depth,$brown);
+}
+.orange{
+  background-color:$orange;
+  @include depth($button-depth,$orange);
+}
+.grey{
+  background-color:$grey;
+  @include depth($button-depth,$grey);
+}
+.black{
+  background-color:$black;
+  @include depth($button-depth,$black);
+}

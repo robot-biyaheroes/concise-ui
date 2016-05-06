@@ -1,0 +1,13 @@
+/* Mixins */
+
+@mixin depth($button-depth,$shadow-color) {
+  box-shadow: 0px $button-depth 0px darken($shadow-color, $shadow-amount);
+  &:hover{
+    background-color:darken($shadow-color,$hover-darken);
+  }
+  &:active{
+    box-shadow:none;
+    -webkit-transform:translateY($button-depth);
+  }
+
+}

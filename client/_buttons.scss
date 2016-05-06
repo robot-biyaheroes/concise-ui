@@ -1,0 +1,19 @@
+/* Placeholders */
+
+%button{
+  display:inline-block;
+  cursor:pointer;
+  color:$default-font-color;
+  border-radius:2px;
+  padding:$padding;
+  margin:$margin;
+  font-family:$default-font;
+  font-size:$default-font-size;
+}
+
+.btn{
+  @extend %button;
+    i{
+      margin-right:10px;
+    }
+}
