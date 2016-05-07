@@ -1,10 +1,54 @@
-@import "_text-size";
+.paragraph {
+	@extend .text;
 
-.indented {
-	text-indent: 30px;
+	width: 100%;
+
+	line-height: 1.1em;
+
+	overflow-x: hidden;
+	text-overflow: ellipsis;
 }
 
-.justify {
+.paragraph.normal {
+	@include normal-text;
+}
+
+.paragraph.huge {
+	@include huge-text;
+}
+
+.paragraph.large {
+	@include large-text;
+}
+
+.paragraph.small {
+	@include small-text;
+}
+
+.paragraph.tiny {
+	@include tiny-text;
+}
+
+.paragraph.indented > p {
+	text-indent: 2em;
+}
+
+.paragraph.justified > p {
 	text-align: justify;
-	text-justify: inter-word;
+}
+
+.paragraph.emphasized > p {
+	padding-left: 5em;
+}
+
+.paragraph.huge.emphasized > p {
+	padding-left: 4em;
+}
+
+.paragraph.large.emphasized > p {
+	padding-left: 3em;
+}
+
+.paragraph.emphasized > .paragraph.emphasized {
+	padding-left: 5em;
 }

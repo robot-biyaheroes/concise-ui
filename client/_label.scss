@@ -7,11 +7,10 @@
 	width: 100%;
 
 	display: inline-block;
-}
 
-.label ~ .label:nth-child(n):nth-child(-n+1) {
-	margin-left: 1em;
-	margin-right: 1em;
+	word-wrap: normal;
+	white-space: nowrap;
+	word-break: keep-all;
 }
 
 .label.normal {
@@ -32,4 +31,46 @@
 
 .label.tiny {
 	@include tiny-text;
+}
+
+.label.focused {
+	font-weight: bolder;
+}
+
+.label.normal.focused {
+	letter-spacing: 0.05em;
+}
+
+.label.small.focused {
+	letter-spacing: 0.04em;
+}
+
+.label.tiny.focused {
+	letter-spacing: 0.06em;
+}
+
+.label.disabled {
+	opacity: 0.3;
+
+	text-decoration: line-through;
+
+	pointer-events: none;
+}
+
+.label.emphasized {
+	text-decoration: underline;
+}
+
+.label.depreciated {
+	opacity: 0.5;
+
+	font-style: italic !important;
+}
+
+.label.depreciated > * {
+	font-size: 75%;
+}
+
+.label.tiny.depreciated > * {
+	font-size: 100%;
 }
