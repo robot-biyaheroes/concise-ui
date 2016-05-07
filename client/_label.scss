@@ -1,0 +1,35 @@
+.label {
+	@extend .text;
+
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+
+	width: 100%;
+
+	display: inline-block;
+}
+
+.label ~ .label:nth-child(n):nth-child(-n+1) {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.label.normal {
+	@include normal-text;
+}
+
+.label.huge {
+	@include huge-text;
+}
+
+.label.large {
+	@include large-text;
+}
+
+.label.small {
+	@include small-text;
+}
+
+.label.tiny {
+	@include tiny-text;
+}
