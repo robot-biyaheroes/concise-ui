@@ -8,20 +8,43 @@
 %button{
   display:inline-block;
   cursor:pointer;
-  color:$default-font-color;
   border-radius:2px;
-  padding:$padding;
-  margin:$margin;
-  font-family:$default-font;
-  font-size:$default-font-size;
 }
 
-.btn{
-  @extend %button;
-    i{
-      margin-right:10px;
-    }
+.button{
+  @extend %button, .text;
+  width: 100%;
+  margin-bottom: 10px;
 }
+
+
+
+
+.button.huge {
+    @include huge-text;
+}
+
+.button.large {
+    @include large-text;
+}
+
+.button.normal {
+    @include normal-text;
+}
+
+.button.small {
+    @include small-text;
+}
+
+.button.tiny {
+    @include tiny-text;
+}
+
+
+
+
+
+
 
 .xl{
   @extend %button;
@@ -50,4 +73,6 @@
   text-decoration: underline;
 
 }
+
+
 
