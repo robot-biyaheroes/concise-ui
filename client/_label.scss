@@ -1,4 +1,4 @@
-.label {
+%label {
 	@extend .text;
 
 	overflow-x: hidden;
@@ -11,6 +11,10 @@
 	word-wrap: normal;
 	white-space: nowrap;
 	word-break: keep-all;
+}
+
+.label {
+	@extend %label;
 }
 
 .label.normal {

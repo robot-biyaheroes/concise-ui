@@ -1,4 +1,4 @@
-.paragraph {
+%paragraph {
 	@extend .text;
 
 	width: 100%;
@@ -7,6 +7,10 @@
 
 	overflow-x: hidden;
 	text-overflow: ellipsis;
+}
+
+.paragraph {
+	@extend %paragraph;
 }
 
 .paragraph.normal {

@@ -1,18 +1,19 @@
 @import "_text-size";
 @import "colors";
-@import "_sizes";
+
 
 
 /* Placeholders */
 
 %button{
+  @extend .label;
   display:inline-block;
   cursor:pointer;
   border-radius:2px;
 }
 
 .button{
-  @extend %button, .text;
+  @extend %button;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -28,7 +29,7 @@
     @include large-text;
 }
 
-.button.normal {
+.button.normal{
     @include normal-text;
 }
 
@@ -40,39 +41,35 @@
     @include tiny-text;
 }
 
-
-
-
-
-
-
-.xl{
-  @extend %button;
-  padding:15px 40px;
-  font-size:$default-font-size * 1.4;
+#switch {
+  width:260px;
+  padding:15px;
+  border:4px solid black;
+  box-sizing:border-box;
+  opacity:0.5;
+  -webkit-filter:grayscale(100%);
+  -webkit-transition:all 03s;
+  transition:all 0.3s;
+  border-radius:540px;
+  cursor:pointer
 }
 
-.l{
-  @extend %button;
-  padding:15px 30px;
-  font-size:$default-font-size * 1.2;
-}
-.s{
-  @extend %button;
-  padding:8px 20px;
-  font-size:$default-font-size * 0.9;
-}
-.xs{
-  @extend %button;
-  padding:6px 12px;
-  font-size:$default-font-size * 0.8;
+#toggle {
+  width:80px;
+  height:80px;
+  background:black;
+  border-radius:100%;
+  position:relative;
+  transition:all 0.3s;
+  left:0;
+  -webkit-transition:all 0.3s;
 }
 
-.link {
-  color: $blue;
-  text-decoration: underline;
-
+#switch.hover #toggle {
+  left:140px;
 }
 
-
-
+#switch.hover {
+  -webkit-filter:none;
+  opacity:1
+}
