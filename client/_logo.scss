@@ -1,0 +1,42 @@
+%logo {
+	@extend .text;
+
+	overflow-x: hidden;
+	width: 100%;
+
+	display: inline-block;
+
+
+}
+
+.logo {
+	@extend %logo;
+
+}
+
+.logo.huge {
+	height: 15em;
+	width: 70em;
+}
+
+.logo.large {
+	height: 11em;
+	width: 47em;
+
+}
+
+.logo.normal {
+	height: 9em;
+	width: 31em;
+	
+}
+.logo.small {
+	height: 5em;
+	width: 20em;
+}
+
+.logo.tiny {
+	height: 2em;
+	width: 10em;
+
+}

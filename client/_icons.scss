@@ -1,0 +1,42 @@
+%icon {
+	@extend .text;
+
+	overflow-x: hidden;
+	width: 100%;
+
+	display: inline-block;
+
+
+}
+
+.icon {
+	@extend %icon;
+
+}
+
+.icon.huge {
+	height: 40em;
+	width: 40em;
+}
+
+.icon.large {
+	height: 30em;
+	width: 30em;
+
+}
+
+.icon.normal {
+	height: 20em;
+	width: 20em;
+	
+}
+.icon.small {
+	height: 10em;
+	width: 10em;
+}
+
+.icon.tiny {
+	height: 5em;
+	width: 5em;
+
+}
