@@ -16,23 +16,28 @@
 
 
 .image.huge {
-	@include huge-text;
+	height: 50em;
+	width: 50em;
 }
 
 .image.large {
-	@include large-text;
+	height: 40em;
+	width: 40em;
 
 }
 
 .image.normal {
-	@include normal-text;
+	height: 30em;
+	width: 30em;
 	
 }
 .image.small {
-	@include small-text;
+	height: 20em;
+	width: 20em;
 }
 
 .image.tiny {
-	@include tiny-text;
+	height: 10em;
+	width: 10em;
 
 }
