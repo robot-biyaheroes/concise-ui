@@ -1,0 +1,38 @@
+%image {
+	@extend .text;
+
+	overflow-x: hidden;
+	width: 100%;
+
+	display: inline-block;
+
+
+}
+
+.image {
+	@extend %image;
+
+}
+
+
+.image.huge {
+	@include huge-text;
+}
+
+.image.large {
+	@include large-text;
+
+}
+
+.image.normal {
+	@include normal-text;
+	
+}
+.image.small {
+	@include small-text;
+}
+
+.image.tiny {
+	@include tiny-text;
+
+}
