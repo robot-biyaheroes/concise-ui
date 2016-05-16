@@ -25,14 +25,34 @@
   -webkit-transition:all 0.3s;
 }
 
-.switch.hover .toggle {
+.switch.hover .toggle.huge {
     left:140px;
  }
 
  .switch.hover .toggle.large{
-    left:140px;
+    left:155px;
+    width: 50px;
+    height: 50px;
  }
 
+
+ .switch.hover .toggle.normal{
+    left:140px;
+    width: 80px;
+    height: 80px;
+ }
+
+ .switch.hover .toggle.small{
+    left:140px;
+    width: 80px;
+    height: 80px;
+ }
+
+ .switch.hover .toggle.tiny{
+    left:140px;
+    width: 80px;
+    height: 80px;
+ }  
 .switch.hover {
   -webkit-filter:none;
   opacity:1
@@ -46,29 +66,10 @@
   margin-bottom: 10px;
   } 
 
-.switch.toggle.huge {
-    width: 260px;
-  }
-
-.switch.toggle.large {
-    width: 200px;
-    padding: 10px;  
-  }
-
-.switch.toggle.normal {
-    
-
-}  
-
-.switch.toggle.small {
-   
+.switch.hover.large {
+  width: 240px;
+  padding:10px;
 }
-
-.switch.toggle.tiny {
-  
-}
-
-
 
 
 
