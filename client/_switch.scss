@@ -13,7 +13,7 @@
   cursor:pointer
 }
 
-.toggle.huge {
+.circle.huge {
   width:80px;
   height:80px;
   background:black;
@@ -25,7 +25,7 @@
 }
 
 
-.switch.huge.hover .toggle {
+.switch.huge.hover .circle {
     left:150px;
 }
 
@@ -45,7 +45,7 @@
   cursor:pointer
 }
 
-.toggle.large {
+.circle.large {
   width:70px;
   height:70px;
   background:black;
@@ -56,7 +56,7 @@
   -webkit-transition:all 0.3s;
 }
 
-.switch.large.hover .toggle {
+.switch.large.hover .circle {
     left:95px;
 }
 
@@ -75,7 +75,7 @@
   cursor:pointer
 }
 
-.toggle.normal {
+.circle.normal {
   width:50px;
   height:50px;
   background:black;
@@ -86,7 +86,7 @@
   -webkit-transition:all 0.3s;
 }
 
-.switch.normal.hover .toggle {
+.switch.normal.hover .circle {
     left:75px;
 }
 
@@ -104,7 +104,7 @@
   cursor:pointer
 }
 
-.toggle.small {
+.circle.small {
   width:30px;
   height:30px;
   background:black;
@@ -115,7 +115,7 @@
   -webkit-transition:all 0.3s;
 }
 
-.switch.small.hover .toggle {
+.switch.small.hover .circle {
     left:40px;
 }
 
@@ -133,7 +133,7 @@
   cursor:pointer
 }
 
-.toggle.tiny {
+.circle.tiny {
   width:15px;
   height:15px;
   background:black;
@@ -144,7 +144,7 @@
   -webkit-transition:all 0.3s;
 }
 
-.switch.tiny.hover .toggle {
+.switch.tiny.hover .circle {
     left:18px;
 
 }
