@@ -16,28 +16,57 @@
 
 
 .image.huge {
-	height: 20em;
-	width: 20em;
+	height: 15em;
+	width: 15em;
 }
 
 .image.large {
-	height: 15em;
-	width: 15em;
+	height: 10em;
+	width: 10em;
 
 }
 
 .image.normal {
-	height: 10em;
-	width: 10em;
+	height: 8em;
+	width: 8em;
 	
 }
 .image.small {
-	height: 5em;
-	width: 5em;
+	height: 6em;
+	width: 6em;
 }
 
 .image.tiny {
 	height: 3em;
 	width: 3em;
 
+}
+
+.image-expanded {
+	@extend %image;
+}
+
+.image-expanded.huge {
+	height: 70vh;
+	width: 80vw;
+}
+
+.image-expanded.large {
+	height: 50vh;
+	width: 60vw;
+}
+
+.image-expanded.normal {
+	height: 30vh;
+	width: 40vw;
+}
+
+.image-expanded.small {
+	height: 20vh;
+	width: 27vw;
+}
+
+.image-expanded.tiny {
+	height: 13vh;
+	width: 15vw;
 }
