@@ -41,6 +41,38 @@
     @include tiny-text;
 }
 
+ul {
+  list-style-type: none;
+}
 
+
+%button-square {
+  display: inline-block;
+}
+
+.button-square {
+  @extend %button-square;
+  margin-bottom: 5px;
+}
+
+.button-square.huge {
+  @include huge-text;
+}
+
+.button-square.large{
+  @include large-text;
+}
+
+.button-square.normal {
+  @include normal-text;
+}
+
+.button-square.small{
+  @include small-text;
+}
+
+.button-square.tiny {
+  @include tiny-text;
+}
 
 
