@@ -57,27 +57,27 @@ ul {
 
 .button-square.huge {
   @include huge-text;
-  padding: 1em 1em;
+  padding: 1em 0.700em;
 }
 
 .button-square.large{
   @include large-text;
-  padding: 1em 1em;
+  padding: 1em 0.700em;
 }
 
 .button-square.normal {
   @include normal-text;
-  padding: 1em 1em;
+  padding: 1em 0.400em;
 }
 
 .button-square.small{
   @include small-text;
-  padding: 1em 1em;
+  padding: 1em 0.300em;
 }
 
 .button-square.tiny {
   @include tiny-text;
-  padding: 1em 1em;
+  padding: 1em 0.200em;
 }
 
 
