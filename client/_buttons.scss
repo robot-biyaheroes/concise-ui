@@ -52,27 +52,32 @@ ul {
 
 .button-square {
   @extend %button-square;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .button-square.huge {
   @include huge-text;
+  padding: 1em 1em;
 }
 
 .button-square.large{
   @include large-text;
+  padding: 1em 1em;
 }
 
 .button-square.normal {
   @include normal-text;
+  padding: 1em 1em;
 }
 
 .button-square.small{
   @include small-text;
+  padding: 1em 1em;
 }
 
 .button-square.tiny {
   @include tiny-text;
+  padding: 1em 1em;
 }
 
 
