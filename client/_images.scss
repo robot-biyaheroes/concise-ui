@@ -9,28 +9,29 @@
 }
 
 
-.image.huge {
+.image.huge.square {
 	height: 15em;
 	width: 15em;
+
 }
 
-.image.large {
+.image.large.square {
 	height: 10em;
 	width: 10em;
 
 }
 
-.image.normal {
+.image.normal.square {
 	height: 8em;
 	width: 8em;
 	
 }
-.image.small {
+.image.small.square {
 	height: 6em;
 	width: 6em;
 }
 
-.image.tiny {
+.image.tiny.square {
 	height: 3em;
 	width: 3em;
 
@@ -64,3 +65,33 @@
 	height: 13vh;
 	width: 100vw;
 }
+
+
+.image-normal.huge {
+	height: 20em;
+	width: 25em;
+
+}
+
+.image-normal.large {
+	height: 15em;
+	width: 20em;
+
+}
+
+.image-normal.normal {
+	height: 10em;
+	width: 15em;
+	
+}
+.image-normal.small {
+	height: 6em;
+	width: 10em;
+}
+
+.image-normal.tiny {
+	height: 3em;
+	width: 6em;
+
+}
+
