@@ -6,8 +6,7 @@
 }
 
 .avatar {
-	@extend %avatar;
-
+	width: auto;
 }
 
 
@@ -25,7 +24,7 @@
 .avatar.normal {
 	height: 6em;
 	width: 6em;
-	
+
 }
 .avatar.small {
 	height: 4em;

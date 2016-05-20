@@ -46,38 +46,33 @@ ul {
 }
 
 
-%button-square {
-  display: inline-block;
-}
-
-.button-square {
-  @extend %button-square;
+.square {
   margin-bottom: 10px;
+  display: inline-block;
+  width: auto;
 }
 
-.button-square.huge {
+.button.square.huge {
   @include huge-text;
   padding: 1em 0.700em;
 }
 
-.button-square.large{
+.button.square.large{
   @include large-text;
   padding: 1em 0.700em;
 }
 
-.button-square.normal {
+.button.square.normal {
   @include normal-text;
   padding: 1em 0.400em;
 }
 
-.button-square.small{
+.button.square.small{
   @include small-text;
   padding: 1em 0.300em;
 }
 
-.button-square.tiny {
+.button.square.tiny {
   @include tiny-text;
   padding: 1em 0.200em;
 }
-
-
