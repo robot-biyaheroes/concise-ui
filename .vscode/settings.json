@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.fontFamily": "source code pro",
+    "editor.fontSize": 13,
+    "editor.wrappingColumn": 75,
+    "editor.lineHeight": 20,
+}

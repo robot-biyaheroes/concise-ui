@@ -1,17 +1,24 @@
-@import "_text-size";
-
 .divider {
-	margin: 50px auto 50px auto;
-} 
-
-.long {
-	width: 80%
+	margin: 5px auto 5px auto;
 }
 
-.short {
-	width: 50%
+.divider.huge {
+	width: 100%;
 }
 
-.full {
-	width: 100%
+.divider.large {
+	width: 80%;
+
+}
+
+.divider.normal {
+	width: 60%;
+}
+
+.divider.small {
+	width: 40%
+}
+
+.divider.tiny {
+	width: 20%;
 }
