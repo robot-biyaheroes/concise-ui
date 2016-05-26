@@ -1,12 +1,15 @@
 %image {
-	overflow-y: hidden;
+	overflow: hidden;
 	display: inline-block;
+	margin: 10px;
 }
 
 .image {
 	@extend %image;
 
 }
+
+// Image Square
 
 
 .image.huge.square {
@@ -37,6 +40,8 @@
 
 }
 
+// Image Expanded
+
 .expanded {
 	@extend %image;
 }
@@ -66,6 +71,7 @@
 	width: 100vw;
 }
 
+// Default Image
 
 .image.huge {
 	height: 20em;
@@ -93,4 +99,67 @@
 	height: 3em;
 	width: 6em;
 
+}
+
+
+// Icon Images
+
+.icon {
+	@extend %image;
+}
+
+.image.icon.huge {
+	height: 5em;
+	width: 5em;
+}
+
+.image.icon.large {
+	height: 4em;
+	width: 4em;
+}
+
+.image.icon.normal {
+	height: 3em;
+	width: 3em;
+}
+
+.image.icon.small {
+	height: 2em;
+	width: 2em;
+}
+
+.image.icon.tiny {
+	height: 1em;
+	width: 1em;
+}
+
+// Avatar 
+
+.avatar {
+	@extend %image;
+}
+
+.image.avatar.huge {
+	height: 10em;
+	width: 10em;
+}
+
+.image.avatar.large {
+	height: 8em;
+	width: 8em;
+}
+
+.image.avatar.normal {
+	height: 6em;
+	width: 6em;
+}
+
+.image.avatar.small {
+	height: 4em;
+	width: 4em;
+}
+
+.avatar.tiny {
+	height: 2em;
+	width: 2em;
 }

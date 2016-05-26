@@ -282,9 +282,7 @@
 		</div>
 		<!--Paragraph-->
 		<!--Indented Paragraph-->
-
-
-			<p
+		<p
 				class="huge indented paragraph"
 				title="indented paragraph">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -397,7 +395,7 @@
 				Aenean sollicitudin varius nibh, ac dapibus diam tincidunt non.
 			</p>
 		</div>
-		
+
 		<!--Emphasized Paragraph-->
 		<div
 			class="huge emphasized paragraph"
@@ -609,15 +607,17 @@
 		<hr/>
 
 		<div
-			class="hover switch huge center"
-			title="switchbutton">
+			class="switch huge center"
+			title="switch button"
+			value="On"
+			onclick="btnSwitch(this)">
 		  <div class="huge circle">
 		  </div>
 		</div>
 
 		<div
 			class="hover switch large center"
-			title="switch button"
+			title="switch button" 
 			onclick="this.classList.toggle('hover')">
 		  <div class="large circle">
 		  </div>
@@ -682,12 +682,12 @@
 		</button>
 
 		<hr/>
-		
-		<button 
+
+		<button
 			type="button"
 			class="button toggle huge center"
 			title="toggle button"
-			value="On"
+			value="Off"
 			onclick="toggle(this)">
 		  HUGE
 		</button>
@@ -696,6 +696,7 @@
 			type="button"
 			class="button toggle large center"
 			title="toggle button"
+			value="Off"
 			onclick="toggle(this)">
 		  LARGE
 		</button>
@@ -704,6 +705,7 @@
 			type="button"
 			class="button toggle normal center"
 			title="toggle button"
+			value="Off"
 			onclick="toggle(this)">
 		  NORMAL
 		</button>
@@ -712,6 +714,7 @@
 			type="button"
 			class="button toggle small center"
 			title="toggle button"
+			value="Off"
 			onclick="toggle(this)">
 		  SMALL
 		</button>
@@ -720,6 +723,7 @@
 			type="button"
 			class="button toggle tiny center"
 			title="switch button"
+			value="Off"
 			onclick="toggle(this)">
 		  TINY
 		</button>
@@ -812,31 +816,31 @@
 
 		<li><div>
 			<img src="asset/img/avatar.png"
-				class="avatar huge"
+				class="image avatar huge"
 				title="avatar">
 		</div></li>
 
 		<li><div>
 			<img src="asset/img/avatar.png"
-				class="avatar large"
+				class="image avatar large"
 				title="avatar">
 		</div></li>
 
 		<li><div>
 			<img src="asset/img/avatar.png"
-				class="avatar normal"
+				class="image avatar normal"
 				title="avatar">
 		</div></li>
 
 		<li><div>
 			<img src="asset/img/avatar.png"
-				class="avatar small"
+				class="image avatar small"
 				title="avatar">
 		</div></li>
 
 		<li><div>
 			<img src="asset/img/avatar.png"
-				class="avatar tiny"
+				class="image avatar tiny"
 				title="avatar">
 		</div></li>
 	</ul>
@@ -849,7 +853,7 @@
 		<li>
 			<div>
 				<img src="asset/icon/icon.png"
-					class="icon huge"
+					class="image icon huge"
 					title="icons">
 			</div>
 		</li>
@@ -857,7 +861,7 @@
 		<li>
 			<div>
 				<img src="asset/icon/icon.png"
-					class="icon large"
+					class="image icon large"
 					title="icons">
 			</div>
 		</li>
@@ -865,7 +869,7 @@
 		<li>
 			<div>
 				<img src="asset/icon/icon.png"
-					class="icon normal"
+					class="image icon normal"
 					title="icons">
 			</div>
 		</li>
@@ -873,7 +877,7 @@
 		<li>
 			<div>
 				<img src="asset/icon/icon.png"
-					class="icon small"
+					class="image icon small"
 					title="icons">
 			</div>
 		</li>
@@ -881,7 +885,7 @@
 		<li>
 			<div>
 				<img src="asset/icon/icon.png"
-					class="icon tiny"
+					class="image icon tiny"
 					title="icons">
 			</div>
 		</li>
@@ -1034,10 +1038,7 @@
 		</div>
 
 		<hr/>
-		
-		<input type="button" value="On" id="onoff" onclick="onoff();">
 
-		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 		<script src="build/concise.js"></script>
 	</body>
